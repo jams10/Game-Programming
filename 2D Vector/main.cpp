@@ -24,6 +24,6 @@ int main( int argv, char* argc[] )
 
 	// Get distance between two vectors
 	float dist = .0f;
-	dist = (v2 - v1).GetLegnth();
+	dist = (v2 - v1).GetLength();
 	std::cout << dist << std::endl;
 }
