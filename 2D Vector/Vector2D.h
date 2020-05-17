@@ -9,6 +9,12 @@ public:
 	Vector2D& operator+=( const Vector2D& rhs ); // In this time, lhs is modified so this method can't be const
 	Vector2D operator*( float rhs )const; // scalar multiplication
 	Vector2D& operator*=( float rhs );
+	Vector2D operator-( const Vector2D& rhs ) const;
+	Vector2D& operator-=( const Vector2D& rhs );
+	Vector2D& Normalize();
+	Vector2D GetNormalized() const;
+	float GetLengthSq() const;
+	float GetLength() const;
 	float GetX();
 	float GetY();
 private:
